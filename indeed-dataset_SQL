@@ -1,0 +1,103 @@
+-- Q1
+SELECT count(*)
+FROM data_analyst_jobs
+
+--Q2
+SELECT  *
+from data_analyst_jobs
+LIMIT 10
+--Q2.1
+SELECT company
+FROM data_analyst_jobs
+LIMIT 10
+--Q3
+SELECT count(title )
+FROM data_analyst_jobs
+WHERE location = 'TN'
+--Q3.1
+SELECT count(title )
+FROM data_analyst_jobs
+WHERE location = 'TN' OR location= 'Kentucky';
+--Q4
+Select title
+FROM data_analyst_jobs
+where start_rating > 4
+--Q5
+select count(title)
+from data_analyst_jobs
+where review_count between 500 and 1000
+--Q6
+select location as stat,avg(start_rating) as avg_rating
+from data_analyst_jobs
+group by location;
+
+--Q7
+select count(distinct(title))
+from data_analyst_jobs
+--Q8
+select distinct(title)
+from data_analyst_jobs
+where company = 'california'
+
+--Q9
+select count(company), avg(start_rating)
+from data_analyst_jobs
+where review_count > 5000
+group by company,location
+
+Alter table -- Q1
+SELECT count(*)
+FROM data_analyst_jobs
+
+--Q2
+SELECT  *
+from data_analyst_jobs
+LIMIT 10
+--Q2.1
+SELECT company
+FROM data_analyst_jobs
+LIMIT 10
+--Q3
+SELECT count(title )
+FROM data_analyst_jobs
+WHERE location = 'TN'
+--Q3.1
+SELECT count(title )
+FROM data_analyst_jobs
+WHERE location = 'TN' OR location= 'Kentucky';
+--Q4
+Select title
+FROM data_analyst_jobs
+where start_rating > 4
+--Q5
+select count(title)
+from data_analyst_jobs
+where review_count between 500 and 1000
+--Q6
+select location as stat,avg(start_rating) as avg_rating
+from data_analyst_jobs
+group by location;
+
+--Q7
+select count(distinct(title))
+from data_analyst_jobs
+--Q8
+select distinct(title)
+from data_analyst_jobs
+where company = 'california'
+
+--Q9
+select count(company), avg(start_rating)
+from data_analyst_jobs
+where review_count > 5000
+group by company,location
+
+
+
+
+
+
+
+
+
+
